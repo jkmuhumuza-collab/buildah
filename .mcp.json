@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "microsoft-outlook-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "microsoft-outlook-mcp"
+      ],
+      "env": {
+        "MICROSOFT_CLIENT_ID": ""
+      }
+    },
+    "Microsoft 365 Files": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mindstone/mcp-server-microsoft-files"
+      ],
+      "env": {
+        "MS_CLIENT_ID": "",
+        "MS_CONFIG_DIR": "",
+        "MS_ACCOUNT_EMAIL": "",
+        "MS_MCP_PACKAGE_ID": "Microsoft365Files",
+        "MICROSOFT_REQUEST_TIMEOUT_MS": "60000"
+      }
+    },
+    "Microsoft 365 Teams": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mindstone/mcp-server-microsoft-teams"
+      ],
+      "env": {
+        "MS_CLIENT_ID": "",
+        "MS_CONFIG_DIR": "",
+        "MS_ACCOUNT_EMAIL": "",
+        "MS_MCP_PACKAGE_ID": "Microsoft365Teams",
+        "MICROSOFT_REQUEST_TIMEOUT_MS": "60000"
+      }
+    }
+  }
+}
